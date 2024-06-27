@@ -10,9 +10,9 @@
         "tier": "Free"
       },
       "properties": {
-        "targetWorkerCount": 0,
-        "targetWorkerSizeId": 0
-      }
+        "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('appServicePlanName'))]",
+        "resourceGroupName": "[resGitHub-Copilot-Challenges]"
+      },
     },
     {
       "type": "Microsoft.Web/sites",
